@@ -19,7 +19,7 @@ This application provides a user interface to control an Arduino-based robot thr
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/YourUsername/ArduinoDriveStationApp.git
+    git clone https://github.com/KeremAlperBatal/ArduinoDriveStationApp.git
     cd ArduinoDriveStationApp
     ```
 
