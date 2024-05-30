@@ -13,7 +13,6 @@ This application provides a user interface to control an Arduino-based robot thr
 
 - Python 3.6 or later
 - Tkinter (usually included with Python)
-- Bleak library for Bluetooth communication
 
 ## Installation
 
@@ -26,7 +25,6 @@ This application provides a user interface to control an Arduino-based robot thr
 2. **Install the required Python packages:**
     ```sh
     pip install tkinter
-    pip install bleak
     ```
 
 ## Usage
