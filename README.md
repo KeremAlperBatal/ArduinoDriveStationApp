@@ -2,6 +2,8 @@
 
 This application provides a user interface to control an Arduino-based robot through Bluetooth. You can switch between Teleop, Autonomous, and Disable modes using the buttons in the interface.
 
+![Screenshot_11](https://github.com/KeremAlperBatal/ArduinoDriveStationApp/assets/52890608/3e7ac959-501e-4b34-b51f-5e985f9d780d)
+
 ## Features
 
 - Connect to Bluetooth devices
