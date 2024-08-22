@@ -73,7 +73,9 @@ class ArduinoDriveStationApp:
             return
 
         try:
-            self.serial_connection.write(mode.encode())
+            # Mode verisini paketleyin
+            packet = f"<{mode}>"
+            self.serial_connection.write(packet.encode())
             self.update_button_colors(mode)
         except Exception as e:
             messagebox.showerror("Error", f"Failed to send mode: {e}")
