@@ -1,13 +1,15 @@
 # Arduino Drive Station App
 
-This application provides a user interface to control an Arduino-based robot through Bluetooth. You can switch between Teleop, Autonomous, and Disable modes using the buttons in the interface.
+This application provides a user interface to control an Arduino-based robot through Bluetooth. You can switch between Teleop, Autonomous, Disable and Practice modes using the buttons in the interface. 
+The app also displays the status of joystick that connected to computer and you can control the robot using joystick.
 
-![Screenshot_11](https://github.com/KeremAlperBatal/ArduinoDriveStationApp/assets/52890608/3e7ac959-501e-4b34-b51f-5e985f9d780d)
+![Screenshot_21](https://github.com/user-attachments/assets/12f3c48a-9678-4d8e-aad1-4572efe1e56c)
 
 ## Features
 
 - Connect to Bluetooth devices
-- Switch between different modes: Teleop, Autonomous, and Disable
+- Switch between different modes: Teleop, Autonomous, Disable and Practice
+- Control the robot using joystick
 - Simple and intuitive user interface
 - Real-time status updates
 
@@ -15,6 +17,8 @@ This application provides a user interface to control an Arduino-based robot thr
 
 - Python 3.6 or later
 - Tkinter (usually included with Python)
+- Pyserial
+- Pygame
 
 ## Installation
 
@@ -27,13 +31,15 @@ This application provides a user interface to control an Arduino-based robot thr
 2. **Install the required Python packages:**
     ```sh
     pip install tkinter
+    pip install pyserial
+    pip install pygame
     ```
 
 ## Usage
 
 1. **Run the application:**
     ```sh
-    python arduino_drive_station.py
+    python ArduinoDriveStationAppV2.py
     ```
 
 2. **Interface Description:**
@@ -43,6 +49,9 @@ This application provides a user interface to control an Arduino-based robot thr
       - Teleop Mode: Green when active, grey when inactive.
       - Autonomous Mode: Green when active, grey when inactive.
       - Disable: Red when active, grey when inactive.
+      - Practice Mode: Green when active, grey when inactive.
+    - **Joystick Axes and Buttons Values:**  Displays the values of joysticks axes and buttons values in a order (eg. Axes: axis1,axis2,axis3
+    Buttons: button1,button2,button3)
 
 3. **Steps to Use:**
     - **Refresh Bluetooth Devices:** Click the "Refresh" button to scan and list available Bluetooth devices.
@@ -57,6 +66,7 @@ This application provides a user interface to control an Arduino-based robot thr
   - **Teleop Mode:** For manual control.
   - **Autonomous Mode:** For autonomous operation.
   - **Disable:** To disable the robot.
+  - **Practice Mode:** To test some functions on the robot.
 
 ## Example
 
