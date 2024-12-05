@@ -33,7 +33,7 @@ This application provides a user interface to control an Arduino-based robot thr
 
 1. **Run the application:**
     ```sh
-    python arduino_drive_station.py
+    python ArduinoDriveStationAppV1.py
     ```
 
 2. **Interface Description:**
